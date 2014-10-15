@@ -169,12 +169,15 @@
      <Compile Include="Assets\VisualNovelToolkit\iTween\Sample\SampleInfo.cs" />
      <Compile Include="Assets\ballControl.cs" />
      <None Include="Assets\VisualNovelToolkit\Resources\Shader\Unlit Alpha.shader" />
+     <None Include="Assets\Textures\skulls\NewShader.shader" />
      <None Include="Assets\VisualNovelToolkit\ReadMe_Japanese.txt" />
      <None Include="Assets\VisualNovelToolkit\Resources\BGM\ReadMe.txt" />
      <None Include="Assets\VisualNovelToolkit\Examples\Example Dialog\ReadMe.txt" />
+     <None Include="Assets\Textures\green-fibers\readme.txt" />
      <None Include="Assets\VisualNovelToolkit\ReadMe.txt" />
      <None Include="Assets\VisualNovelToolkit\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\VisualNovelToolkit\Resources\Effects\ReadMe.txt" />
+     <None Include="Assets\Textures\skulls\readme.txt" />
  <Reference Include="DLL">
  <HintPath>C:/Users/Kaleb/Documents/KalebSeniorProject/Pong/Assets/VisualNovelToolkit/DLLs/DLL.dll</HintPath>
  </Reference>
