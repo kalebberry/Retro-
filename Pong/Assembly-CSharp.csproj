@@ -46,10 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameManager.cs" />
-     <Compile Include="Assets\GameSetup.cs" />
-     <Compile Include="Assets\PlayerControl.cs" />
-     <Compile Include="Assets\SideWalls.cs" />
+     <Compile Include="Assets\PongScripts\GameManager.cs" />
+     <Compile Include="Assets\PongScripts\GameSetup.cs" />
+     <Compile Include="Assets\PongScripts\PlayerControl.cs" />
+     <Compile Include="Assets\PongScripts\SideWalls.cs" />
+     <Compile Include="Assets\PongScripts\ballControl.cs" />
      <Compile Include="Assets\VisualNovelToolkit\Examples\Example Dialog\Scripts\SampleScenarioEvent.cs" />
      <Compile Include="Assets\VisualNovelToolkit\Scripts\Internal\CodeGenerator.cs" />
      <Compile Include="Assets\VisualNovelToolkit\Scripts\Internal\DefaultScriptBinder.cs" />
@@ -167,7 +168,6 @@
      <Compile Include="Assets\VisualNovelToolkit\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\VisualNovelToolkit\iTween\Sample\RotateSample.cs" />
      <Compile Include="Assets\VisualNovelToolkit\iTween\Sample\SampleInfo.cs" />
-     <Compile Include="Assets\ballControl.cs" />
      <None Include="Assets\VisualNovelToolkit\Resources\Shader\Unlit Alpha.shader" />
      <None Include="Assets\VisualNovelToolkit\ReadMe_Japanese.txt" />
      <None Include="Assets\VisualNovelToolkit\Resources\BGM\ReadMe.txt" />
@@ -176,7 +176,7 @@
      <None Include="Assets\VisualNovelToolkit\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\VisualNovelToolkit\Resources\Effects\ReadMe.txt" />
  <Reference Include="DLL">
- <HintPath>C:/Users/KG3UNFORGN/Documents/Unity Projects/Pong/Assets/VisualNovelToolkit/DLLs/DLL.dll</HintPath>
+ <HintPath>C:/Users/KG3UNFORGN/Documents/KalebSeniorProject/Pong/Assets/VisualNovelToolkit/DLLs/DLL.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

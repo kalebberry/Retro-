@@ -94,7 +94,7 @@
      <None Include="Assets\VisualNovelToolkit\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\VisualNovelToolkit\Resources\Effects\ReadMe.txt" />
  <Reference Include="DLL">
- <HintPath>C:/Users/KG3UNFORGN/Documents/Unity Projects/Pong/Assets/VisualNovelToolkit/DLLs/DLL.dll</HintPath>
+ <HintPath>C:/Users/KG3UNFORGN/Documents/KalebSeniorProject/Pong/Assets/VisualNovelToolkit/DLLs/DLL.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
