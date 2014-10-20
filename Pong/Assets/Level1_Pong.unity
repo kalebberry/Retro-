@@ -351,7 +351,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e72b2164a24f11478ecb4731da36414, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4873b84da2c4c9f4ea1dbbdbf55cdcd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &556900496
 Transform:
@@ -392,7 +392,7 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725772438}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: e062a41d71cafef4fbf71faf6567cf15, type: 2}
+  m_Material: {fileID: 6200000, guid: 3ebff40b5508929458956aff162cedfa, type: 2}
   m_IsTrigger: 0
   m_Radius: .230000004
   m_Center: {x: 0, y: 0}
@@ -416,7 +416,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e7e7735dc5cfd0742871e98d5b1bed8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54305779eeccda748bd235ca2d467cfb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &725772441
 Transform:
@@ -598,7 +598,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5e72b2164a24f11478ecb4731da36414, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4873b84da2c4c9f4ea1dbbdbf55cdcd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1069655384
 Transform:
@@ -912,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd458ab84be852145ac9ed1a45f4b16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theSkin: {fileID: 11400000, guid: 296e9f37f032d8c468a71bed880fc51d, type: 2}
+  theSkin: {fileID: 11400000, guid: e1ed4841145fd0e409447dea582560f0, type: 2}
 --- !u!82 &1480914539
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1108,9 +1108,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1770661971
+  m_SortingLayerID: 0
   m_SortingOrder: -10
-  m_Sprite: {fileID: 21300000, guid: e4dbd30ca5f0bf24a8fe0118da3f3522, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 585383c42f7cef043a6771db4423ca97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2041096709
 Transform:
