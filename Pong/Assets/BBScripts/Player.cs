@@ -6,11 +6,21 @@ public class Player : MonoBehaviour {
     public float speed = 10.0f;
     public KeyCode moveLeft;
     public KeyCode moveRight;
+    Collision2D collider;
 
-	
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Ball")
+        {
+            rigidbody2D.AddForce(new Vector2(0, 50));
+        }
+    }
+
 	// Update is called once per frame
 	void Update () 
     {
+        //Movement with A and D
+
         if (Input.GetKey(moveRight))
         {
             rigidbody2D.velocity = new Vector2(speed, 0);
@@ -22,9 +32,6 @@ public class Player : MonoBehaviour {
         else
         {
             rigidbody2D.velocity = new Vector2(0, 0);
-
         }
-        
-	
 	}
 }
