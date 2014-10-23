@@ -5,9 +5,10 @@ TagManager:
   tags:
   - Ball
   - TextBox
-  - 
+  - PlayerBB
   - TextBoxBG
   - AutoSkipLog
+  - brick
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
