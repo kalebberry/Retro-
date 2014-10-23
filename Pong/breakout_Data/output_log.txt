@@ -13,7 +13,7 @@ Platform assembly: C:\Users\Kaleb\Documents\KalebSeniorProject\Pong\breakout_Dat
 Loading C:\Users\Kaleb\Documents\KalebSeniorProject\Pong\breakout_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Kaleb\Documents\KalebSeniorProject\Pong\breakout_Data\Managed\DLL.dll (this message is harmless)
 Loading C:\Users\Kaleb\Documents\KalebSeniorProject\Pong\breakout_Data\Managed\DLL.dll into Unity Child Domain
-- Completed reload, in  0.673 seconds
+- Completed reload, in  0.414 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
