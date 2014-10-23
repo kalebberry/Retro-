@@ -33,5 +33,10 @@ public class Player : MonoBehaviour {
         {
             rigidbody2D.velocity = new Vector2(0, 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 	}
 }

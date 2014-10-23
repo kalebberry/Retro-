@@ -1,37 +1,72 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BallControlBB : MonoBehaviour {
+public class BallControlBB : MonoBehaviour 
+{
 
-    public bool grounded = false; // Check if player has press spacebar to start the game
-    public bool interact = false;
-    public float ballSpeed = 50f;
+    public float ballSpeed = 10f;
     public Transform ball;
+    private Vector2 ballPosition;
+    private Vector2 ballInitialForce;
+    private bool ballIsActive;
+
+    public GameObject playerObject;
 
     RaycastHit2D whatIHit;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
+        ballInitialForce = new Vector2(100.0f, 300.0f);
 
-        ball.position = new Vector3(0f, -3.0f, 0f);
+        // Set to inactive
+        ballIsActive = false;
+
+        // ballposition
+        ballPosition = transform.position;
+
         
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	 
-
-	}
-
-    void OnCollisionEnter2D(Collision2D col)
+    void Update()
     {
-
-        if (col.gameObject.tag == "PlayerBB")
+        if (Input.GetButtonDown("Jump") == true)
         {
-            rigidbody2D.AddForce(new Vector2(ballSpeed, 300));
-            Debug.Log("Paddle Hit");
-           
-        }
-    }
+            // Check if is the first play
+            if (!ballIsActive)
+            {
 
+                // resets force
+                rigidbody2D.isKinematic = false;
+
+                // add a force
+                rigidbody2D.AddForce(ballInitialForce);
+
+                // Set ball to actice
+                ballIsActive = true;
+            }
+        }
+
+        if (!ballIsActive && playerObject != null)
+        {
+            // get and use the player position
+            ballPosition.x = playerObject.transform.position.x;
+
+            // apply the player X position to the ball
+            transform.position = ballPosition;
+        }
+
+        // Check if ball fails
+        if (ballIsActive && transform.position.y < -6)
+        {
+            ballIsActive = false;
+            ballPosition.x = playerObject.transform.position.x;
+            ballPosition.y = -3.6f;
+            transform.position = ballPosition;
+
+            rigidbody2D.isKinematic = true;
+        }
+
+    }
 }
