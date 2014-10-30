@@ -58,7 +58,7 @@ public class BallControlBB : MonoBehaviour
         }
 
         // Check if ball fails
-        if (ballIsActive && transform.position.y < -6)
+        if (ballIsActive && transform.position.y < -3.9)
         {
             ballIsActive = false;
             ballPosition.x = playerObject.transform.position.x;
@@ -66,6 +66,9 @@ public class BallControlBB : MonoBehaviour
             transform.position = ballPosition;
 
             rigidbody2D.isKinematic = true;
+
+            // Send Message
+            playerObject.SendMessage("TakeLife");
         }
 
     }

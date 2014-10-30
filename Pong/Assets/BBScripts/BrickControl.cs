@@ -27,6 +27,12 @@ public class BrickControl : MonoBehaviour
 
             if (numberOfHits == hitsToKill)
             {
+                //get reference of player object
+                GameObject player = GameObject.FindGameObjectWithTag("PlayerBB");
+
+                // send message
+                player.SendMessage("addPoints", points);
+
                 // destroy this object
                 Destroy(this.gameObject);
             }
