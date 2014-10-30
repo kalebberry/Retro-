@@ -87,7 +87,7 @@ GameObject:
   - 114: {fileID: 6177152}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &6177153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ GameObject:
   - 114: {fileID: 171254921}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &171254922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ GameObject:
   - 114: {fileID: 232253549}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &232253550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -490,7 +490,7 @@ GameObject:
   - 61: {fileID: 260578033}
   m_Layer: 0
   m_Name: BlueBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 2
-  points: 0
+  points: 20
 --- !u!212 &260578035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -568,7 +568,7 @@ GameObject:
   - 114: {fileID: 269303965}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &269303966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ GameObject:
   - 114: {fileID: 311258163}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &311258164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -918,7 +918,7 @@ GameObject:
   - 114: {fileID: 370241299}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &370241300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -979,7 +979,7 @@ Transform:
   m_PrefabInternal: {fileID: 1198623854}
   m_GameObject: {fileID: 370241298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.76828361, y: 3.88331294, z: 0}
+  m_LocalPosition: {x: -3.87559724, y: 3.88331294, z: 0}
   m_LocalScale: {x: .945669532, y: .945669532, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   - 114: {fileID: 466434561}
   m_Layer: 0
   m_Name: GoldBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 3
-  points: 0
+  points: 35
 --- !u!61 &466434562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1076,7 +1076,7 @@ GameObject:
   - 61: {fileID: 484234771}
   m_Layer: 0
   m_Name: BlueBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 2
-  points: 0
+  points: 20
 --- !u!212 &484234773
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1247,7 +1247,7 @@ GameObject:
   - 114: {fileID: 611485587}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &611485588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1326,7 +1326,7 @@ GameObject:
   - 61: {fileID: 615456369}
   m_Layer: 0
   m_Name: BlueBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 2
-  points: 0
+  points: 20
 --- !u!212 &615456371
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   - 114: {fileID: 778405965}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &778405966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1818,7 +1818,7 @@ GameObject:
   - 114: {fileID: 856754372}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &856754373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ GameObject:
   - 114: {fileID: 876204103}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &876204104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2333,7 +2333,7 @@ GameObject:
   - 114: {fileID: 1111879036}
   m_Layer: 0
   m_Name: GrayBlocks
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2351,7 +2351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 1
-  points: 0
+  points: 10
 --- !u!61 &1111879037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2456,7 +2456,7 @@ GameObject:
   - 114: {fileID: 1196290056}
   m_Layer: 0
   m_Name: GoldBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2474,7 +2474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 3
-  points: 0
+  points: 35
 --- !u!61 &1196290057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2531,7 +2531,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 4fb83dd91ef15f845a68628506a25ec8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.76828361
+      value: -3.87559724
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4fb83dd91ef15f845a68628506a25ec8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2632,7 +2632,7 @@ GameObject:
   - 114: {fileID: 1315625766}
   m_Layer: 0
   m_Name: GoldBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2650,7 +2650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 3
-  points: 0
+  points: 35
 --- !u!61 &1315625767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2711,7 +2711,7 @@ GameObject:
   - 114: {fileID: 1405884674}
   m_Layer: 0
   m_Name: GoldBlock
-  m_TagString: Untagged
+  m_TagString: brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 3
-  points: 0
+  points: 35
 --- !u!61 &1405884675
 BoxCollider2D:
   m_ObjectHideFlags: 0

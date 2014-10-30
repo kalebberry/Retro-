@@ -7,6 +7,20 @@ public class Player : MonoBehaviour {
     public KeyCode moveLeft;
     public KeyCode moveRight;
     Collision2D collider;
+    private int playerLives;
+    private int playerPoints;
+
+
+    void Start()
+    {
+        playerLives = 3;
+        playerPoints = 0;
+    }
+
+    void addPoints(int points)
+    {
+        playerPoints += points;
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -14,6 +28,18 @@ public class Player : MonoBehaviour {
         {
             rigidbody2D.AddForce(new Vector2(0, 50));
         }
+    }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(5.0f, 4.0f, 200.0f, 200.0f), "Live's: " + playerLives);
+        GUI.Label(new Rect(5.0f, 16.0f, 200.0f, 200.0f),  "Score: " + playerPoints);
+
+    }
+
+    void TakeLife()
+    {
+        playerLives--;
     }
 
 	// Update is called once per frame
