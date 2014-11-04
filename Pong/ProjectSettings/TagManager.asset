@@ -8,6 +8,11 @@ TagManager:
   - PlayerBB
   - TextBoxBG
   - AutoSkipLog
+  - NormalBlock
+  - BlueBlock
+  - GoldBlock
+  - OrangeBlock
+  - 
   - brick
   - 
   Builtin Layer 0: Default

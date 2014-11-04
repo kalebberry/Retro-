@@ -9,23 +9,23 @@ public class BallControlBB : MonoBehaviour
     private Vector2 ballPosition;
     private Vector2 ballInitialForce;
     private bool ballIsActive;
+    float direct = 0;
 
     public GameObject playerObject;
 
-    RaycastHit2D whatIHit;
+
 
 	// Use this for initialization
 	void Start () 
     {
-        ballInitialForce = new Vector2(100.0f, 300.0f);
+        direction();
+        ballInitialForce = new Vector2(direct, 300.0f);
 
         // Set to inactive
         ballIsActive = false;
 
         // ballposition
         ballPosition = transform.position;
-
-        
 	}
 	
 	// Update is called once per frame
@@ -72,4 +72,22 @@ public class BallControlBB : MonoBehaviour
         }
 
     }
+
+    void direction() 
+    {
+         float ran = Random.Range(0,2);
+
+        if (ran == 0)
+        {
+            direct = 100.0f;
+        }
+        else
+        {
+            direct = 50.0f;
+        }
+        
+    }
+
+
+     
 }

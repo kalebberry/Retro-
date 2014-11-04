@@ -6,7 +6,6 @@ public class Player : MonoBehaviour {
     public float speed = 10.0f;
     public KeyCode moveLeft;
     public KeyCode moveRight;
-    Collision2D collider;
     private int playerLives;
     private int playerPoints;
 
