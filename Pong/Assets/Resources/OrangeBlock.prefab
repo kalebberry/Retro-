@@ -12,8 +12,13 @@ GameObject:
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
   m_Layer: 0
+<<<<<<< HEAD:Pong/Assets/Prefabs/GoldBlock.prefab
+  m_Name: GoldBlock
+  m_TagString: GoldBrick
+=======
   m_Name: OrangeBlock
   m_TagString: Untagged
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/OrangeBlock.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +57,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3c730b6a19de94298f99e73017e284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Pong/Assets/Prefabs/GoldBlock.prefab
+  hitsToKill: 3
+  points: 35
+  bricks: []
+=======
   hitsToKill: 4
   points: 70
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/OrangeBlock.prefab
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

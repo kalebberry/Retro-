@@ -13,7 +13,11 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: BlueBlock
+<<<<<<< HEAD:Pong/Assets/Prefabs/BlueBlock.prefab
+  m_TagString: BlueBrick
+=======
   m_TagString: BlueBlock
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/BlueBlock.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +57,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 2
+<<<<<<< HEAD:Pong/Assets/Prefabs/BlueBlock.prefab
+  points: 20
+  bricks: []
+=======
   points: 30
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/BlueBlock.prefab
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

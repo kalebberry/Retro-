@@ -12,8 +12,13 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
+<<<<<<< HEAD:Pong/Assets/Prefabs/GrayBlocks.prefab
+  m_Name: GrayBlocks
+  m_TagString: NormalBrick
+=======
   m_Name: GrayBlock
   m_TagString: brick
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/GrayBlock.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsToKill: 1
   points: 10
+  bricks: []
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
