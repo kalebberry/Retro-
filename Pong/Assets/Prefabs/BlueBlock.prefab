@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: BlueBlock
-  m_TagString: brick
+  m_TagString: BlueBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsToKill: 2
   points: 20
+  bricks: []
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

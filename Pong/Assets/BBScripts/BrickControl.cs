@@ -6,6 +6,8 @@ public class BrickControl : MonoBehaviour
     public int hitsToKill;
     public int points;
     private int numberOfHits;
+    public GameObject[] bricks;
+    private GameObject brickSelect;
 
 	// Use this for initialization
 	void Start () 
