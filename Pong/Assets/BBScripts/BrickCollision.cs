@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BrickControl : MonoBehaviour
+public class BrickCollision: MonoBehaviour
 {
+
     public int hitsToKill;
     public int points;
     private int numberOfHits;
@@ -12,6 +13,7 @@ public class BrickControl : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
+        
         numberOfHits = 0;
 	}
 	
@@ -40,4 +42,5 @@ public class BrickControl : MonoBehaviour
             }
         }
     }
+
 }

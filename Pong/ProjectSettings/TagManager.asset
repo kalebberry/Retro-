@@ -8,10 +8,17 @@ TagManager:
   - PlayerBB
   - TextBoxBG
   - AutoSkipLog
+<<<<<<< HEAD
   - NormalBrick
   - BlueBrick
   - GoldBrick
   - Orange Brick
+=======
+  - NormalBlock
+  - BlueBlock
+  - GoldBlock
+  - OrangeBlock
+>>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460
   - 
   - brick
   - 
