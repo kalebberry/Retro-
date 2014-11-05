@@ -9,6 +9,8 @@ public class BrickCollision: MonoBehaviour
     protected int numberOfHits;
     public GameObject[] bricks;
     private GameObject brickSelect;
+    SpriteRenderer renderer;
+    Rigidbody clone;
 
 
 	// Use this for initialization
@@ -16,6 +18,7 @@ public class BrickCollision: MonoBehaviour
     {
         
         numberOfHits = 0;
+  
 	}
 	
 	// Update is called once per frame
@@ -30,7 +33,11 @@ public class BrickCollision: MonoBehaviour
         {
             numberOfHits++;
 
-            
+            if (numberOfHits == 1)
+            {
+
+                transform.renderer.material.color = Color.gray;
+            }
 
             if (numberOfHits == hitsToKill)
             {
