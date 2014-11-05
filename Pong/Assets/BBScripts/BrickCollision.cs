@@ -6,13 +6,10 @@ public class BrickCollision: MonoBehaviour
 
     public int hitsToKill;
     public int points;
-    private int numberOfHits;
+    protected int numberOfHits;
     public GameObject[] bricks;
     private GameObject brickSelect;
-    private GameObject bluebrick = GameObject.FindGameObjectWithTag("BlueBrick");
-    private GameObject goldbrick = GameObject.FindGameObjectWithTag("GoldBrick");
-    private GameObject graybrick = GameObject.FindGameObjectWithTag("GrayBrick");
-    private GameObject orangebrick = GameObject.FindGameObjectWithTag("OrangeBrick");
+
 
 	// Use this for initialization
 	void Start () 
@@ -32,6 +29,8 @@ public class BrickCollision: MonoBehaviour
         if (collision.gameObject.tag == "Ball")
         {
             numberOfHits++;
+
+            
 
             if (numberOfHits == hitsToKill)
             {

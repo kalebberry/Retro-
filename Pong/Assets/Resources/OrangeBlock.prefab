@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitsToKill: 4
-  points: 70
+  points: 40
   bricks: []
 --- !u!212 &21200000
 SpriteRenderer:

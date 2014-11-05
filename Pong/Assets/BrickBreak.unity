@@ -596,6 +596,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1d0d12e3216114c8ceabe5c1ee0a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitsToKill: 0
+  points: 0
+  bricks: []
   ballSpeed: 3000
   ball: {fileID: 1023743709}
   playerObject: {fileID: 700488605}

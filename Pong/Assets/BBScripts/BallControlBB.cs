@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BallControlBB : MonoBehaviour 
+public class BallControlBB : BrickCollision
 {
 
     public float ballSpeed = 10f;
@@ -86,6 +86,18 @@ public class BallControlBB : MonoBehaviour
             direct = 50.0f;
         }
         
+    }
+
+   void  OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BlueBlock")
+        {
+            if (numberOfHits == 1)
+            {
+                
+            }
+
+        }
     }
 
 
