@@ -5,6 +5,15 @@ TagManager:
   tags:
   - 
   - GoldBlock
+<<<<<<< HEAD
+=======
+  - brick
+  - PlayerBB
+  - Ball
+  - GrayBlock
+  - OrangeBlock
+  - BlueBlock
+>>>>>>> 16650a16a2048e91cdd8d4a247c1c472cb05082b
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
