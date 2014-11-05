@@ -12,13 +12,8 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-<<<<<<< HEAD:Pong/Assets/Prefabs/GrayBlocks.prefab
-  m_Name: GrayBlocks
-  m_TagString: NormalBrick
-=======
   m_Name: GrayBlock
-  m_TagString: brick
->>>>>>> 0c0a03f5f2d8a5e0b73c441cc52e8a1fd0d1e460:Pong/Assets/Resources/GrayBlock.prefab
+  m_TagString: GrayBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.24000001, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

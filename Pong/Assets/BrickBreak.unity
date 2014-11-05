@@ -113,48 +113,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
---- !u!1 &238385289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 238385291}
-  - 114: {fileID: 238385290}
-  m_Layer: 0
-  m_Name: RowofBricks
-  m_TagString: brick
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &238385290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 238385289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f34a12d8904f2d46b50602164b8e867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitsToKill: 0
-  points: 0
-  verticalSpace: 5
---- !u!4 &238385291
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 238385289}
-  m_LocalRotation: {x: 0, y: 0, z: .02617695, w: .999657333}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
 --- !u!1 &244874371
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsToKill: 0
   points: 0
+  bricks: []
   verticalSpace: 4
 --- !u!4 &775411821
 Transform:
@@ -679,6 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsToKill: 0
   points: 0
+  bricks: []
 --- !u!1 &1074173935
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,45 +799,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &2121773395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2121773397}
-  - 114: {fileID: 2121773396}
-  m_Layer: 0
-  m_Name: RowofBricks
-  m_TagString: brick
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2121773396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121773395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f34a12d8904f2d46b50602164b8e867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitsToKill: 0
-  points: 0
-  verticalSpace: 3
---- !u!4 &2121773397
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121773395}
-  m_LocalRotation: {x: 0, y: 0, z: .02617695, w: .999657333}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
