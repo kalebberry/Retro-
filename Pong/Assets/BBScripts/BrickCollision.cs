@@ -35,7 +35,6 @@ public class BrickCollision: MonoBehaviour
 
             if (numberOfHits == 1)
             {
-
                 transform.renderer.material.color = Color.gray;
             }
 
