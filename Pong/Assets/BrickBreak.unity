@@ -315,7 +315,7 @@ MonoBehaviour:
   hitsToKill: 0
   points: 0
   bricks: []
-  verticalSpace: 5
+  verticalSpace: 2
 --- !u!4 &635878180
 Transform:
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 700488605}
   m_Mass: 99999
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0

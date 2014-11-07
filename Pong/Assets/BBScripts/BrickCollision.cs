@@ -33,11 +33,6 @@ public class BrickCollision: MonoBehaviour
         {
             numberOfHits++;
 
-            if (numberOfHits == 1)
-            {
-                transform.renderer.material.color = Color.gray;
-            }
-
             if (numberOfHits == hitsToKill)
             {
                 //get reference of player object
@@ -49,7 +44,34 @@ public class BrickCollision: MonoBehaviour
                 // destroy this object
                 Destroy(this.gameObject);
             }
+            else
+            {
+                changeColor(this.gameObject);
+            }
         }
     }
+
+    void changeColor(GameObject brick)
+    {
+        //Color color = brick.transform.renderer.material.color;
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        Color color = sr.color;
+        Color ORANGE = new Color(0.934f, 0.409f, 0.124f, 1.00f);
+        Color GOLD = new Color(1.000f, 0.929f, 0.037f, 1.000f);
+        Color BLUE = new Color(0.026f, 0.396f, 0.893f, 1.000f);
+        if (color.ToString().Equals(ORANGE.ToString()))
+        {
+            sr.color = GOLD;
+        }
+        else if (color.ToString().Equals(GOLD.ToString()))
+        {
+            sr.color = BLUE;
+        }
+        else if (color.ToString().Equals(BLUE.ToString()))
+        {
+            sr.color = new Color(1f, 1f, 1f, 1f);
+        }
+    }
+
 
 }
