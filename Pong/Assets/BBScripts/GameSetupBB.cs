@@ -15,6 +15,7 @@ public class GameSetupBB : MonoBehaviour {
 
     void Start()
     {
+        Screen.SetResolution(880, 480, false);
         player01.position = new Vector3(0f, -3.8f, 0f);
     }
 	// Update is called once per frame

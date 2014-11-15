@@ -51,6 +51,7 @@
      <Compile Include="Assets\BBScripts\BrickRow.cs" />
      <Compile Include="Assets\BBScripts\GameSetupBB.cs" />
      <Compile Include="Assets\BBScripts\Player.cs" />
+     <Compile Include="Assets\Menu Art\MenuScript.cs" />
      <Compile Include="Assets\PongScripts\GameManager.cs" />
      <Compile Include="Assets\PongScripts\GameSetup.cs" />
      <Compile Include="Assets\PongScripts\PlayerControl.cs" />

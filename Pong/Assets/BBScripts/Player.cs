@@ -8,6 +8,9 @@ public class Player : MonoBehaviour {
     public KeyCode moveRight;
     private int playerLives;
     private int playerPoints;
+    private Transform paddle;
+    private float lockPos = 0;
+
 
 
     void Start()
@@ -15,6 +18,7 @@ public class Player : MonoBehaviour {
         playerLives = 3;
         playerPoints = 0;
     }
+ 
 
     void addPoints(int points)
     {
@@ -44,6 +48,11 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+        //Lock rotaion of paddle
+        transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
+
+
+
         //Movement with A and D
 
         if (Input.GetKey(moveRight))

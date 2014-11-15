@@ -43,7 +43,7 @@ public class BallControlBB : BrickCollision
                 // add a force
                 rigidbody2D.AddForce(ballInitialForce);
 
-                // Set ball to actice
+                // Set ball to active
                 ballIsActive = true;
             }
         }
@@ -56,6 +56,9 @@ public class BallControlBB : BrickCollision
             // apply the player X position to the ball
             transform.position = ballPosition;
         }
+
+        // Check to see if ball gets stuck
+        
 
         // Check if ball fails
         if (ballIsActive && transform.position.y < -3.9)
@@ -70,6 +73,22 @@ public class BallControlBB : BrickCollision
             // Send Message
             playerObject.SendMessage("TakeLife");
         }
+
+
+        // Check if ball 
+        float xVel = rigidbody2D.velocity.x;
+        float yVel = rigidbody2D.velocity.y;
+
+        if (xVel == 0)
+        {
+            rigidbody2D.AddForce(new Vector2(-8.0f, 0.6f));
+         
+        }
+        else if (yVel == 0)
+        {
+            rigidbody2D.AddForce(new Vector2(0.6f, -8.0f));
+  
+         }
 
     }
 
@@ -88,18 +107,11 @@ public class BallControlBB : BrickCollision
         
     }
 
-   void  OnCollisionEnter2D(Collision2D collision)
+    IEnumerator wait()
     {
-        if (collision.gameObject.tag == "BlueBlock")
-        {
-            if (numberOfHits == 1)
-            {
-                
-            }
-
-        }
+        yield return new WaitForSeconds(15);
+       
     }
-
 
      
 }

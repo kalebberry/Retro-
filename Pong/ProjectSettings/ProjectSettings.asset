@@ -10,11 +10,11 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: YourCompany
-  productName: ViNoApp
+  companyName: Xociety
+  productName: Retro!
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  defaultScreenWidth: 870
+  defaultScreenWidth: 800
   defaultScreenHeight: 480
   defaultScreenWidthWeb: 854
   defaultScreenHeightWeb: 480
@@ -27,7 +27,7 @@ PlayerSettings:
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 2
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
   allowedAutorotateToLandscapeRight: 1
@@ -42,7 +42,7 @@ PlayerSettings:
   Override IPod Music: 0
   Prepare IOS For Recording: 0
   enableHWStatistics: 1
-  usePlayerLog: 1
+  usePlayerLog: 0
   stripPhysics: 0
   forceSingleInstance: 0
   resizableWindow: 0
@@ -54,17 +54,16 @@ PlayerSettings:
   xboxEnableKinectAutoTracking: 0
   xboxEnableFitness: 0
   macFullscreenMode: 2
-  d3d9FullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
   videoMemoryForVertexBuffers: 0
   m_SupportedAspectRatios:
-    4:3: 1
-    5:4: 1
-    16:10: 1
-    16:9: 1
-    Others: 1
+    4:3: 0
+    5:4: 0
+    16:10: 0
+    16:9: 0
+    Others: 0
   iPhoneBundleIdentifier: com.YourCompany.ViNoApp
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
@@ -104,7 +103,7 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 1ee4c0b3de86bf74e8095bba61bec7b4, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
@@ -155,7 +154,6 @@ PlayerSettings:
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
-  metroPackageLogo240: 
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
@@ -163,44 +161,26 @@ PlayerSettings:
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: UsingViNoFree1.004a
-  metroStoreTileLogo80: 
-  metroStoreTileLogo: 
-  metroStoreTileLogo140: 
-  metroStoreTileLogo180: 
-  metroStoreTileWideLogo80: 
-  metroStoreTileWideLogo: 
-  metroStoreTileWideLogo140: 
-  metroStoreTileWideLogo180: 
-  metroStoreTileSmallLogo80: 
-  metroStoreTileSmallLogo: 
-  metroStoreTileSmallLogo140: 
-  metroStoreTileSmallLogo180: 
-  metroStoreSmallTile80: 
-  metroStoreSmallTile: 
-  metroStoreSmallTile140: 
-  metroStoreSmallTile180: 
-  metroStoreLargeTile80: 
-  metroStoreLargeTile: 
-  metroStoreLargeTile140: 
-  metroStoreLargeTile180: 
-  metroStoreSplashScreenImage: 
-  metroStoreSplashScreenImage140: 
-  metroStoreSplashScreenImage180: 
-  metroPhoneAppIcon: 
-  metroPhoneAppIcon140: 
-  metroPhoneAppIcon240: 
-  metroPhoneSmallTile: 
-  metroPhoneSmallTile140: 
-  metroPhoneSmallTile240: 
-  metroPhoneMediumTile: 
-  metroPhoneMediumTile140: 
-  metroPhoneMediumTile240: 
-  metroPhoneWideTile: 
-  metroPhoneWideTile140: 
-  metroPhoneWideTile240: 
-  metroPhoneSplashScreenImage: 
-  metroPhoneSplashScreenImage140: 
-  metroPhoneSplashScreenImage240: 
+  metroTileLogo80: 
+  metroTileLogo: 
+  metroTileLogo140: 
+  metroTileLogo180: 
+  metroTileWideLogo80: 
+  metroTileWideLogo: 
+  metroTileWideLogo140: 
+  metroTileWideLogo180: 
+  metroTileSmallLogo80: 
+  metroTileSmallLogo: 
+  metroTileSmallLogo140: 
+  metroTileSmallLogo180: 
+  metroSmallTile80: 
+  metroSmallTile: 
+  metroSmallTile140: 
+  metroSmallTile180: 
+  metroLargeTile80: 
+  metroLargeTile: 
+  metroLargeTile140: 
+  metroLargeTile180: 
   metroTileShortName: 
   metroCommandLineArgsFile: 
   metroTileShowName: 0
@@ -210,6 +190,9 @@ PlayerSettings:
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
   metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenImage: 
+  metroSplashScreenImage140: 
+  metroSplashScreenImage180: 
   metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenUseBackgroundColor: 0
   metroCapabilities: {}
