@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-   static int playerScore01 = 0;
-   static int playerScore02 = 0;
+   int playerScore01 = 0;
+   int playerScore02 = 0;
    public GUISkin theSkin;
    Transform theBall;
 
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
    }
 
 	// Update is called once per frame
-	 public static void score (string wallName)
+	 public void score (string wallName)
      {
          if (wallName == "rightWall")
          {
@@ -42,9 +42,13 @@ public class GameManager : MonoBehaviour {
              playerScore02 = 0;
 
              theBall.gameObject.SendMessage("ResetBall");
-
-             
          }
+     }
+
+     void gameOver()
+     {
+         //pauses the game
+         Time.timeScale = 0.0f;
      }
 
 

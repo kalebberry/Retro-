@@ -22,8 +22,13 @@ public class PlayerControl : MonoBehaviour {
         {
             rigidbody2D.velocity = new Vector2(0, 0);
 
-        }
-        
-	
+        }	
+
+
 	}
+
+    void ResetPlayer()
+    {
+        transform.position = new Vector2(0, 1);
+    }
 }
