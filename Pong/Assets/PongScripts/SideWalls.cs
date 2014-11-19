@@ -8,7 +8,6 @@ public class SideWalls : MonoBehaviour {
     {
         if (hitInfo.name == "Ball")
         {
-          
             string wallName = transform.name;
             audio.Play();
             audio.pitch = Random.Range(0.8f, 1.2f);
