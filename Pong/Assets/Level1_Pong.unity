@@ -211,8 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6386ac980496074dbf1e4319c67ae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 0}
-  gameOverSound: {fileID: 469316007}
 --- !u!82 &469316007
 AudioSource:
   m_ObjectHideFlags: 0
@@ -438,8 +436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff23551bc7da264c8d4327cdc85bc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 0}
-  gameOverSound: {fileID: 0}
 --- !u!1 &725772438
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,9 +507,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725772438}
-  m_Mass: .100000001
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .800000012
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
@@ -532,8 +528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeed: 1
-  player01: {fileID: 1069655384}
-  player02: {fileID: 556900496}
 --- !u!82 &725772444
 AudioSource:
   m_ObjectHideFlags: 0
@@ -701,8 +695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff23551bc7da264c8d4327cdc85bc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 0}
-  gameOverSound: {fileID: 0}
 --- !u!1 &1133390201
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,8 +786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6386ac980496074dbf1e4319c67ae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 0}
-  gameOverSound: {fileID: 0}
 --- !u!82 &1399836954
 AudioSource:
   m_ObjectHideFlags: 0
@@ -917,7 +907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd458ab84be852145ac9ed1a45f4b16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverSound: {fileID: 0}
   theSkin: {fileID: 11400000, guid: e1ed4841145fd0e409447dea582560f0, type: 2}
 --- !u!82 &1480914539
 AudioSource:

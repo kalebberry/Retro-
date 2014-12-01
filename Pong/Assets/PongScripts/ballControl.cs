@@ -3,9 +3,7 @@ using System.Collections;
 
 public class ballControl : MonoBehaviour {
 
-    public float ballSpeed = 100;
-    public Transform player01;
-    public Transform player02;
+    public float ballSpeed = 25;
     private bool DEBUG = false;
 
 	// Use this for initialization
@@ -13,7 +11,7 @@ public class ballControl : MonoBehaviour {
         StartCoroutine(WaitStart());
 	}
 
-    void Update()
+    void FixedUpdate()
     {
         float xVel = rigidbody2D.velocity.x;
 
@@ -46,8 +44,6 @@ public class ballControl : MonoBehaviour {
     {
         rigidbody2D.velocity = new Vector2(0, 0);
         transform.position = new Vector2(0, 1);
-        player01.position = new Vector2(0, 1);
-        player02.position = new Vector2(0, 1);
         
         StartCoroutine(WaitReset());
     }

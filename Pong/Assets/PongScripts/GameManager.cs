@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : getScore {
 
-   int playerScore01 = 0;
-   int playerScore02 = 0;
    public GUISkin theSkin;
    Transform theBall;
 
@@ -12,22 +10,6 @@ public class GameManager : MonoBehaviour {
    {
        theBall = GameObject.FindGameObjectWithTag("Ball").transform;
    }
-
-	// Update is called once per frame
-	 public void score (string wallName)
-     {
-         if (wallName == "rightWall")
-         {
-             playerScore01++;
-         }
-         else
-         {
-             playerScore02++;
-         }
-         Debug.Log("Player Score 1 is " + playerScore01);
-         Debug.Log("Player Score 2 is " + playerScore02);
-	}
-
 
 
      void OnGUI()
@@ -45,7 +27,7 @@ public class GameManager : MonoBehaviour {
          }
      }
 
-     void gameOver()
+     void pauseGame()
      {
          //pauses the game
          Time.timeScale = 0.0f;

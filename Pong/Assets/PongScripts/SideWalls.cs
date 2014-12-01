@@ -11,7 +11,7 @@ public class SideWalls : MonoBehaviour {
             string wallName = transform.name;
             audio.Play();
             audio.pitch = Random.Range(0.8f, 1.2f);
-            GameManager.score(wallName);
+            getScore.instance.score(wallName);
 
             hitInfo.gameObject.SendMessage("ResetBall");
         }

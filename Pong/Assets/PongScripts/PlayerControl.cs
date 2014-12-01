@@ -26,9 +26,4 @@ public class PlayerControl : MonoBehaviour {
 
 
 	}
-
-    void ResetPlayer()
-    {
-        transform.position = new Vector2(0, 1);
-    }
 }
