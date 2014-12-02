@@ -7,6 +7,7 @@ public class getScore : MonoBehaviour {
     public static getScore instance { get; private set; }
     protected int playerScore01 = 0;
     protected int playerScore02 = 0;
+    protected int round = 1;
 
 	void Awake () 
     {
@@ -22,7 +23,17 @@ public class getScore : MonoBehaviour {
 
             if (playerScore01 == 7)
             {
-                gameOver();
+                round++;
+                if (round > 3)
+                {
+
+                    gameOver();
+                }
+                else
+                {
+                    playerScore01 = 0;
+                    playerScore02 = 0;
+                }
             }
         }
         else if(wallName == "leftWall")
@@ -31,7 +42,17 @@ public class getScore : MonoBehaviour {
 
             if (playerScore02 == 7)
             {
-                gameOver();
+                round++;
+                if (round > 3)
+                {
+
+                    gameOver();
+                }
+                else
+                {
+                    playerScore01 = 0;
+                    playerScore02 = 0;
+                }
             }
         }
         Debug.Log("Player Score 1 is " + playerScore01);

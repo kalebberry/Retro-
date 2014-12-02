@@ -17,7 +17,9 @@ public class GameManager : getScore {
          GUI.skin = theSkin;
          GUI.Label(new Rect(Screen.width / 2 - 150-18, 20, 100, 100), "" + playerScore01);
          GUI.Label(new Rect(Screen.width / 2 + 150-18, 20, 100, 100), "" + playerScore02);
+         GUI.Label(new Rect(Screen.width / 2 - 121 / 4, 35, 121, 53), "Round " + round);
 
+         /*
          if (GUI.Button(new Rect(Screen.width / 2-121/4, 35, 121, 53), "RESET"))
          {
              playerScore01 = 0;
@@ -25,6 +27,7 @@ public class GameManager : getScore {
 
              theBall.gameObject.SendMessage("ResetBall");
          }
+          */
      }
 
      void pauseGame()
