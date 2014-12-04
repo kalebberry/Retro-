@@ -27,15 +27,24 @@ public class getScore : MonoBehaviour {
             if (playerScore01 == 7)
             {
                 round++;
-                if (round > 3)
+                roundWins1++;
+                if (roundWins1 == 2 && roundWins2 == 0)
                 {
-
                     gameOver();
                 }
                 else
                 {
-                    playerScore01 = 0;
-                    playerScore02 = 0;
+
+                    if (round > 3)
+                    {
+
+                        gameOver();
+                    }
+                    else
+                    {
+                        playerScore01 = 0;
+                        playerScore02 = 0;
+                    }
                 }
             }
         }
@@ -46,18 +55,29 @@ public class getScore : MonoBehaviour {
             if (playerScore02 == 7)
             {
                 round++;
-                if (round > 3)
+                roundWins2++;
+                if (roundWins2 == 2 && roundWins1 == 0)
                 {
-
                     gameOver();
                 }
                 else
                 {
-                    playerScore01 = 0;
-                    playerScore02 = 0;
+
+                    if (round > 3)
+                    {
+
+                        gameOver();
+                    }
+                    else
+                    {
+                        playerScore01 = 0;
+                        playerScore02 = 0;
+                    }
                 }
             }
         }
+        Debug.Log("Player 1 has won " + roundWins1 + " rounds");
+          Debug.Log("Player 2 has won " + roundWins2 + " rounds");
         Debug.Log("Player Score 1 is " + playerScore01);
         Debug.Log("Player Score 2 is " + playerScore02);
     }

@@ -12,8 +12,8 @@ public class OverMenu : getScore
         if (player1wins)
         {
 
-            GUI.Label(new Rect(Screen.width / 2 - 84, Screen.height / 2 - 60, 100, 30), "Player1 Wins!!");
-            GUI.Label(new Rect(Screen.width / 2 - 84, Screen.height / 2 - 40, 100, 30), "Player1: " + roundWins2 + "-" + "Player2: " + roundWins1);
+            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 60, 100, 30), "Player1 Wins!!");
+            GUI.Label(new Rect(Screen.width / 2 - 94, Screen.height / 2 - 40, 100, 30), "Player1: " + roundWins2 + "-" + "Player2: " + roundWins1);
         }
         else
         {
