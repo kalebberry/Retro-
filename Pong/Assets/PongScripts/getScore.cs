@@ -7,6 +7,9 @@ public class getScore : MonoBehaviour {
     public static getScore instance { get; private set; }
     protected int playerScore01 = 0;
     protected int playerScore02 = 0;
+    protected int roundWins1 = 0;
+    protected int roundWins2 = 0;
+    protected bool player1wins = false;
     protected int round = 1;
 
 	void Awake () 

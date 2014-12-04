@@ -54,6 +54,7 @@
      <Compile Include="Assets\Menu Art\MenuScript.cs" />
      <Compile Include="Assets\PongScripts\GameManager.cs" />
      <Compile Include="Assets\PongScripts\GameSetup.cs" />
+     <Compile Include="Assets\PongScripts\OverMenu.cs" />
      <Compile Include="Assets\PongScripts\PlayerControl.cs" />
      <Compile Include="Assets\PongScripts\SendMessage.cs" />
      <Compile Include="Assets\PongScripts\SideWalls.cs" />
