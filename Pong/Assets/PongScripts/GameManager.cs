@@ -15,9 +15,13 @@ public class GameManager : getScore {
      void OnGUI()
      {
          GUI.skin = theSkin;
-         GUI.Label(new Rect(Screen.width / 2 - 150-18, 20, 100, 100), "" + playerScore01);
-         GUI.Label(new Rect(Screen.width / 2 + 150-18, 20, 100, 100), "" + playerScore02);
-         GUI.Label(new Rect(Screen.width / 2 - 121 / 4, 35, 121, 53), "Round " + round);
+         GUI.Label(new Rect(Screen.width / 2 - 180, Screen.height / 2 - 160, 100, 30), "" + playerScore01);
+         GUI.Label(new Rect(Screen.width / 2 - (-70), Screen.height / 2 - 160, 100, 30), "" + playerScore02);
+         GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 200, 100, 30), "Round " + round);
+
+
+         GUI.Label(new Rect(Screen.width / 2 - 288, Screen.height / 2 - 220, 100, 30), "Wins: " + roundWins1);
+         GUI.Label(new Rect(Screen.width / 2 - (-180), Screen.height / 2 - 220, 100, 30), "Wins: " + roundWins2);
 
          /*
          if (GUI.Button(new Rect(Screen.width / 2-121/4, 35, 121, 53), "RESET"))

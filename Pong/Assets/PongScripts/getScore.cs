@@ -30,7 +30,7 @@ public class getScore : MonoBehaviour {
                 roundWins1++;
                 if (roundWins1 == 2 && roundWins2 == 0)
                 {
-                    gameOver();
+                    Application.LoadLevel("gameOver");
                 }
                 else
                 {
@@ -38,7 +38,7 @@ public class getScore : MonoBehaviour {
                     if (round > 3)
                     {
 
-                        gameOver();
+                        Application.LoadLevel("gameover"); 
                     }
                     else
                     {
@@ -58,7 +58,7 @@ public class getScore : MonoBehaviour {
                 roundWins2++;
                 if (roundWins2 == 2 && roundWins1 == 0)
                 {
-                    gameOver();
+                    Application.LoadLevel("gameOver");
                 }
                 else
                 {
@@ -66,7 +66,7 @@ public class getScore : MonoBehaviour {
                     if (round > 3)
                     {
 
-                        gameOver();
+                        Application.LoadLevel("gameOver");
                     }
                     else
                     {
