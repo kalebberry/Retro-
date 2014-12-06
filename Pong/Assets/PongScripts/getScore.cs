@@ -10,7 +10,7 @@ public class getScore : MonoBehaviour {
     protected int roundWins1 = 0;
     protected int roundWins2 = 0;
     protected bool player1wins = false;
-    protected int round = 1;
+    protected int round = 1; 
 
 	void Awake () 
     {
@@ -30,6 +30,7 @@ public class getScore : MonoBehaviour {
                 roundWins1++;
                 if (roundWins1 == 2 && roundWins2 == 0)
                 {
+                    player1wins = true;
                     Application.LoadLevel("gameOver");
                 }
                 else
@@ -80,6 +81,27 @@ public class getScore : MonoBehaviour {
           Debug.Log("Player 2 has won " + roundWins2 + " rounds");
         Debug.Log("Player Score 1 is " + playerScore01);
         Debug.Log("Player Score 2 is " + playerScore02);
+    }
+
+   public int getPlayer1Score()
+    {
+
+        return playerScore01;
+    }
+
+    int getPlayer2Score()
+    {
+        return playerScore02;
+    }
+
+    int getPlayer1Wins()
+    {
+        return roundWins1;
+    }
+
+    int getPlayerWins()
+    {
+        return roundWins2;
     }
 
     void gameOver()

@@ -5,12 +5,45 @@ public class GameManager : getScore {
 
    public GUISkin theSkin;
    Transform theBall;
+   private bool pauseGame = false;
+   private bool showGUI  = false;
+   private GameObject pause;
+    void Update()
+    {
+       if(Input.GetKeyDown("p"))
+	    {
+		        pauseGame = !pauseGame;
+		
+    	        if(pauseGame == true)
+    	        {
+    		        Time.timeScale = 0;
+    		        pauseGame = true;
+    		        showGUI = true;
+    	        }
+            }
+    
+            if(pauseGame == false)
+            {
+    	        Time.timeScale = 1;
+    	        pauseGame = false;
+    	        showGUI = false;
+            }
+    
+            if(showGUI == true)
+            {
+                GameObject.Find("PausedGUI").guiTexture.enabled = true;
+            }
+    
+            else
+            {
+    	        GameObject.Find("PausedGUI").guiTexture.enabled = false;  
+            }
+        }
 
    void Start()
    {
        theBall = GameObject.FindGameObjectWithTag("Ball").transform;
    }
-
 
      void OnGUI()
      {
@@ -32,12 +65,6 @@ public class GameManager : getScore {
              theBall.gameObject.SendMessage("ResetBall");
          }
           */
-     }
-
-     void pauseGame()
-     {
-         //pauses the game
-         Time.timeScale = 0.0f;
      }
 
 
