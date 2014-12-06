@@ -52,8 +52,11 @@
      <Compile Include="Assets\BBScripts\GameSetupBB.cs" />
      <Compile Include="Assets\BBScripts\Player.cs" />
      <Compile Include="Assets\Menu Art\MenuScript.cs" />
+     <Compile Include="Assets\PongScripts\ExitButton.cs" />
+     <Compile Include="Assets\PongScripts\GameButton.cs" />
      <Compile Include="Assets\PongScripts\GameManager.cs" />
      <Compile Include="Assets\PongScripts\GameSetup.cs" />
+     <Compile Include="Assets\PongScripts\MainMenuScript.cs" />
      <Compile Include="Assets\PongScripts\OverMenu.cs" />
      <Compile Include="Assets\PongScripts\PlayerControl.cs" />
      <Compile Include="Assets\PongScripts\SendMessage.cs" />
