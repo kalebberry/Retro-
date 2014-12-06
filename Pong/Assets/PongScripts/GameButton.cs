@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GameButton : MonoBehaviour {
-    private bool showGUI = true;
+ 
 
 
     void OnMouseUp()

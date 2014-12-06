@@ -7,38 +7,66 @@ public class GameManager : getScore {
    Transform theBall;
    private bool pauseGame = false;
    private bool showGUI  = false;
+   private bool pauseDisabled = true;
    private GameObject pause;
-    void Update()
-    {
-       if(Input.GetKeyDown("p"))
-	    {
-		        pauseGame = !pauseGame;
-		
-    	        if(pauseGame == true)
-    	        {
-    		        Time.timeScale = 0;
-    		        pauseGame = true;
-    		        showGUI = true;
-    	        }
-            }
-    
-            if(pauseGame == false)
-            {
-    	        Time.timeScale = 1;
-    	        pauseGame = false;
-    	        showGUI = false;
-            }
-    
-            if(showGUI == true)
-            {
-                GameObject.Find("PausedGUI").guiTexture.enabled = true;
-            }
-    
-            else
-            {
-    	        GameObject.Find("PausedGUI").guiTexture.enabled = false;  
-            }
-        }
+   void Update()
+   {
+       if (pauseDisabled)
+       {
+           if (Input.GetKeyDown("p"))
+           {
+               pauseGame = !pauseGame;
+
+               if (pauseGame == true)
+               {
+                   Time.timeScale = 0;
+                   pauseGame = true;
+                   showGUI = true;
+               }
+           }
+       }
+
+       if (pauseGame == false)
+       {
+           Time.timeScale = 1;
+           pauseGame = false;
+           showGUI = false;
+       }
+
+       if (playerwins == true)
+       {
+           showGUI = false;
+           pauseDisabled = false;
+           pauseGame = true;
+           Time.timeScale = 0;
+       }
+
+       if (showGUI == true)
+       {
+           GameObject.Find("PausedGUI").guiTexture.enabled = true;
+           
+       }
+
+       else
+       {
+           GameObject.Find("PausedGUI").guiTexture.enabled = false;
+       }
+
+       if (Input.GetKeyDown("m"))
+       {
+           Time.timeScale = 1;
+           Application.LoadLevel("GameMenu");
+       }
+       if (Input.GetKeyDown("r"))
+       {
+           if (Time.timeScale == 0)
+           {
+               Time.timeScale = 1;
+           }
+            Application.LoadLevel("Level1_Pong");
+       }
+   
+   }
 
    void Start()
    {

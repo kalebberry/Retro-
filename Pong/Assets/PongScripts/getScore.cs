@@ -9,7 +9,8 @@ public class getScore : MonoBehaviour {
     protected int playerScore02 = 0;
     protected int roundWins1 = 0;
     protected int roundWins2 = 0;
-    protected bool player1wins = false;
+    protected bool playerwins = false;
+    protected bool showedGUI = false;
     protected int round = 1; 
 
 	void Awake () 
@@ -30,8 +31,18 @@ public class getScore : MonoBehaviour {
                 roundWins1++;
                 if (roundWins1 == 2 && roundWins2 == 0)
                 {
-                    player1wins = true;
-                    Application.LoadLevel("gameOver");
+                    showedGUI = true;
+                    if (showedGUI)
+                    {
+                        playerwins = true;
+                        GameObject.Find("GameOverBG").guiTexture.enabled = true;
+                        GameObject.Find("GameOverText").guiText.enabled = true;
+                        GameObject.Find("P1Wins").guiText.enabled = true;
+                        GameObject.Find("Reset").guiText.enabled = true;
+                        GameObject.Find("backMM").guiText.enabled = true;
+
+                       
+                    }
                 }
                 else
                 {
@@ -39,7 +50,19 @@ public class getScore : MonoBehaviour {
                     if (round > 3)
                     {
 
-                        Application.LoadLevel("gameover"); 
+                        gameOver();
+                        showedGUI = true;
+             
+                        if (showedGUI)
+                        {
+                            playerwins = true;
+                            GameObject.Find("GameOverBG").guiTexture.enabled = true;
+                            GameObject.Find("GameOverText").guiText.enabled = true;
+                            GameObject.Find("P1Wins").guiText.enabled = true;
+                            GameObject.Find("Restart").guiTexture.enabled = true;
+                            GameObject.Find("backMM").guiTexture.enabled = true;
+                            
+                        }
                     }
                     else
                     {
@@ -59,15 +82,38 @@ public class getScore : MonoBehaviour {
                 roundWins2++;
                 if (roundWins2 == 2 && roundWins1 == 0)
                 {
-                    Application.LoadLevel("gameOver");
+                    gameOver();
+                    showedGUI = true;
+                    if (showedGUI)
+                    {
+                        playerwins = true;
+                        GameObject.Find("GameOverBG").guiTexture.enabled = true;
+                        GameObject.Find("GameOverText").guiText.enabled = true;
+                        GameObject.Find("P2Wins").guiText.enabled = true;
+                        GameObject.Find("Restart").guiTexture.enabled = true;
+                        GameObject.Find("backMM").guiTexture.enabled = true;
+                     
+                    }
                 }
                 else
                 {
 
                     if (round > 3)
                     {
-
-                        Application.LoadLevel("gameOver");
+                       
+                        showedGUI = true;
+                        
+                        if (showedGUI)
+                        {
+                            playerwins = true;
+                            GameObject.Find("GameOverBG").guiTexture.enabled = true;
+                            GameObject.Find("GameOverText").guiText.enabled = true;
+                            GameObject.Find("P2Wins").guiText.enabled = true;
+                            GameObject.Find("Restart").guiTexture.enabled = true;
+                            GameObject.Find("backMM").guiTexture.enabled = true;
+                            
+                           
+                        }
                     }
                     else
                     {

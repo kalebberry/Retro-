@@ -24,7 +24,7 @@ public class OverMenu : getScore
         }
          */
 
-
+        GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 60, 100, 30), "Player1 Wins!!");
         if (GUI.Button(new Rect(Screen.width / 2 - 140, Screen.height / 2 - 60, 100, 30), "Play Again"))
         {
            

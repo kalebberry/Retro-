@@ -1,8 +1,10 @@
 fileFormatVersion: 2
-guid: e1509f9396b0f5a44b087eed5f1080d4
+guid: 8b41394c714c25e4ea06ae8b1bf217c6
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MenuGUI
+    21300000: GuiBG
+    21300002: GuiBG 1
+    21300004: GameOverBG
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -39,7 +41,7 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   textureType: 0
   buildTargetSettings: []
   spriteSheet:
