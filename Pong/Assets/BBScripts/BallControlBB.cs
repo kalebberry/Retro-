@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class BallControlBB : BrickCollision
 {
 
@@ -75,18 +76,20 @@ public class BallControlBB : BrickCollision
         }
 
 
-        // Check if ball 
+        // Check if ball is 
+
+        // gets current position of ball and velocity
         float xVel = rigidbody2D.velocity.x;
         float yVel = rigidbody2D.velocity.y;
 
-        if (xVel == 0)
+        if (xVel * xVel < 1.0)
         {
-            rigidbody2D.AddForce(new Vector2(-8.0f, 0.6f));
+            rigidbody2D.AddForce(new Vector2(-8.0f, 1f));
          
         }
-        else if (yVel == 0)
+        else if (yVel * yVel < 1.0)
         {
-            rigidbody2D.AddForce(new Vector2(0.6f, -8.0f));
+            rigidbody2D.AddForce(new Vector2(1f, -8.0f));
   
          }
 

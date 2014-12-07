@@ -43,12 +43,16 @@ public class GameManager : getScore {
 
        if (showGUI == true)
        {
+           GameObject.Find("Reset").guiText.enabled = true;
+           GameObject.Find("backMM").guiText.enabled = true;
            GameObject.Find("PausedGUI").guiTexture.enabled = true;
            
        }
 
        else
        {
+           GameObject.Find("Reset").guiText.enabled = false;
+           GameObject.Find("backMM").guiText.enabled = false;
            GameObject.Find("PausedGUI").guiTexture.enabled = false;
        }
 

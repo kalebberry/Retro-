@@ -12,12 +12,13 @@ public class BrickRow : BrickCollision {
 	void Start () 
     {
         RowofBricks();
+        //Destroy(this.gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-	
+       
 	}
 
     // This function will display a public array of bricks.
@@ -33,10 +34,9 @@ public class BrickRow : BrickCollision {
             // poistion ait in the scence
             rowBricks[i].transform.position = new Vector2(horizontalSpace,verticalSpace);
             horizontalSpace = horizontalSpace + 1.8f;
-            
         }
-
     }
+
 
     GameObject RandomBrick(GameObject brick)
     {

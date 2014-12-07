@@ -6,6 +6,7 @@ public class BrickCollision: MonoBehaviour
 
     public int hitsToKill;
     public int points;
+    protected int increase;
     protected int numberOfHits;
     public GameObject[] bricks;
     private GameObject brickSelect;
@@ -31,6 +32,7 @@ public class BrickCollision: MonoBehaviour
     {
         if (collision.gameObject.tag == "Ball")
         {
+            audio.Play();
             numberOfHits++;
 
             if (numberOfHits == hitsToKill)
@@ -41,8 +43,12 @@ public class BrickCollision: MonoBehaviour
                 // send message
                 player.SendMessage("addPoints", points);
 
+                // Increase Level Counter
+                player.SendMessage("increaseLevel");
+               
+               
                 // destroy this object
-                Destroy(this.gameObject);
+                Destroy(this.gameObject,0.1f);
             }
             else
             {
@@ -72,6 +78,14 @@ public class BrickCollision: MonoBehaviour
             sr.color = new Color(1f, 1f, 1f, 1f);
         }
     }
+
+    IEnumerator wait()
+    {
+        print(Time.time);
+        yield return new WaitForSeconds(100f);
+        print(Time.time);
+    }
+
 
 
 }
