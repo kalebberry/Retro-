@@ -38,8 +38,8 @@ public class getScore : MonoBehaviour {
                         GameObject.Find("GameOverBG").guiTexture.enabled = true;
                         GameObject.Find("GameOverText").guiText.enabled = true;
                         GameObject.Find("P1Wins").guiText.enabled = true;
-                        GameObject.Find("Reset").guiText.enabled = true;
-                        GameObject.Find("backMM").guiText.enabled = true;
+                        GameObject.Find("Reset2").guiText.enabled = true;
+                        GameObject.Find("backMM2").guiText.enabled = true;
 
                        
                     }
@@ -59,8 +59,8 @@ public class getScore : MonoBehaviour {
                             GameObject.Find("GameOverBG").guiTexture.enabled = true;
                             GameObject.Find("GameOverText").guiText.enabled = true;
                             GameObject.Find("P1Wins").guiText.enabled = true;
-                            GameObject.Find("Restart").guiTexture.enabled = true;
-                            GameObject.Find("backMM").guiTexture.enabled = true;
+                            GameObject.Find("Reset2").guiText.enabled = true;
+                            GameObject.Find("backMM2").guiText.enabled = true;
                             
                         }
                     }
@@ -90,8 +90,8 @@ public class getScore : MonoBehaviour {
                         GameObject.Find("GameOverBG").guiTexture.enabled = true;
                         GameObject.Find("GameOverText").guiText.enabled = true;
                         GameObject.Find("P2Wins").guiText.enabled = true;
-                        GameObject.Find("Restart").guiTexture.enabled = true;
-                        GameObject.Find("backMM").guiTexture.enabled = true;
+                        GameObject.Find("Reset2").guiText.enabled = true;
+                        GameObject.Find("backMM2").guiText.enabled = true;
                      
                     }
                 }
@@ -109,10 +109,8 @@ public class getScore : MonoBehaviour {
                             GameObject.Find("GameOverBG").guiTexture.enabled = true;
                             GameObject.Find("GameOverText").guiText.enabled = true;
                             GameObject.Find("P2Wins").guiText.enabled = true;
-                            GameObject.Find("Restart").guiTexture.enabled = true;
-                            GameObject.Find("backMM").guiTexture.enabled = true;
-                            
-                           
+                            GameObject.Find("Reset2").guiText.enabled = true;
+                            GameObject.Find("backMM2").guiText.enabled = true;
                         }
                     }
                     else

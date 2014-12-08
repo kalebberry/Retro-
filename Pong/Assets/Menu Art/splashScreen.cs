@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class splashScreen : MonoBehaviour {
-    public float timer = 2f;
+    public float timer = 10f;
     public float fadeSpeed = 1.5f;
     private bool scenceStarting = true;
     public string levelToLoad = "GameMenu";

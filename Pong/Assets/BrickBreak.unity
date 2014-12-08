@@ -741,7 +741,7 @@ MonoBehaviour:
   hitsToKill: 0
   points: 0
   bricks: []
-  speed: 15
+  speed: 8
   moveLeft: 97
   moveRight: 100
   gonextLevel: 30

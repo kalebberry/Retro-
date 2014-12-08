@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12501b58a9b74a408abc38d184e78f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeSpeed: 1.5
+  fadeSpeed: 2
 --- !u!131 &1954355468
 GUITexture:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbdfc6019b69ef64fb82bf35dbbc7174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 5
   fadeSpeed: 1.5
   levelToLoad: GameMenu
 --- !u!1 &1998175360
