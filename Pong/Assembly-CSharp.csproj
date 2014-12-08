@@ -52,6 +52,8 @@
      <Compile Include="Assets\BBScripts\GameSetupBB.cs" />
      <Compile Include="Assets\BBScripts\Player.cs" />
      <Compile Include="Assets\Menu Art\MenuScript.cs" />
+     <Compile Include="Assets\Menu Art\fadetoblack.cs" />
+     <Compile Include="Assets\Menu Art\splashScreen.cs" />
      <Compile Include="Assets\PongScripts\ExitButton.cs" />
      <Compile Include="Assets\PongScripts\GameButton.cs" />
      <Compile Include="Assets\PongScripts\GameManager.cs" />
